@@ -1,0 +1,29 @@
+/* Span */
+.section__title {
+    color: #60a5f5;
+    font-size: 3.5rem;
+}
+
+/* h3 */
+.main__title {
+    color: #60a5f5;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+/* Images Logo */
+.about__card .bxl-html5 {
+    color: #e34f26;
+}
+
+.about__card .bxl-css3 {
+    color: #264de4;
+}
+
+.about__card .bxl-javascript {
+    color: #f7df1e;
+}
+
+.about__card .bxl-react {
+    color: #61dafb;
+}
