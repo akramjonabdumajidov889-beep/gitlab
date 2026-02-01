@@ -271,10 +271,109 @@ body {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 480px) {
     .container {
-        max-width: 150rem;
-        width: 80%;
+        max-width: 140rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .header__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {
+        font-size: 2.6rem;
+    }
+
+    .header__links {
+        display: inline-block;
+        margin: 0 0.5rem;
+        color: #cbd5f5;
+        text-decoration: none;
+        font-size: 1.6rem;
+        transition: all .1s;
+    }
+
+    .header__links--active {
+        color: #60a5f5;
+    }
+
+    .header__links:hover {
+        color: #fff;
+     }
+
+     .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4rem;
+
+     }
+
+     .hero__container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+     }
+
+     .hero__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 70%;
+        line-height: 1.3;
+        text-align: left;
+        margin: 3rem 0;
+        text-align: left;
+     }
+
+     .hero__title {
+        text-align-last: left;
+     }
+
+     .hero__text {
+        text-align-last: left;
+        line-height: 1.6;
+     }
+
+     .main__title {
+        font-size: 2rem;
+     }
+
+     .hero__img {
+        width: 30%;;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+     }
+
+     .hero__img img {
+        width: 13rem;
+        height: 17rem;;
+     }
+
+     .about,
+     .project {
+        padding: 2rem 0;
+     }
+
+     .about__grid, 
+     .project__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+     }
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 120rem;
+        width: 100%;
         margin: auto;
     }
 
@@ -316,19 +415,15 @@ body {
     /* Hero */
     .hero {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .hero__container {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
+    
 
     .hero__grid {
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 70%;
         text-align: left;
         margin: 8rem 0;
 
@@ -346,6 +441,7 @@ body {
 
     .hero__img {
         text-align: right;
+        width: 30%;
         margin: 8rem 2rem 0;
     }
 
@@ -369,6 +465,7 @@ body {
     .project__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 2rem;
     }
 
