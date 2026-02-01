@@ -44,12 +44,6 @@ body {
     font-size: 3.5rem;
 }
 
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .header__links {
     display: none;
 }
@@ -67,6 +61,7 @@ body {
 }
 
 .hero__subtitle {
+    margin-top: 1rem;
     font-size: 2.4rem;
     text-align: center;
     color: #fff;
@@ -92,8 +87,8 @@ body {
 }
 
 .hero__img img {
-    width: 13.4rem;
-    height: 16rem;
+    width: 24.4rem;
+    height: 28rem;
     object-fit: cover;
     border-radius: 1rem;
     border: 3px solid #60a5f5;
@@ -273,4 +268,118 @@ body {
     text-align: center;
     color: #fff;
     font-size: 1.6rem;
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 150rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Header */
+    .header__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 30rem; */
+    }
+
+    .header__logo {
+        font-size: 3rem;
+    }
+
+    .header__nav {
+        margin-left: 4rem;
+    }
+
+    .header__links {
+        display: inline-block;
+        gap: 3rem;
+        margin: 0 2rem;
+        font-size: 1.7rem;
+        color: #cbd5f5;
+        text-decoration: none;
+        transition: all .1s;
+    }
+
+     .header__links:hover {
+        color: #fff;
+     }
+
+     .header__links--active {
+        color: #60a5f5;
+     }
+
+    /* Hero */
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero__container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .hero__grid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        text-align: left;
+        margin: 8rem 0;
+
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__title,
+    .hero__text {
+        text-align: left;
+
+    }
+
+    .hero__img {
+        text-align: right;
+        margin: 8rem 2rem 0;
+    }
+
+    .hero__img img {
+        width: 13rem;
+        height: 16rem;
+        object-fit: cover;
+    }
+
+    /* About section */
+    .about,
+    .project {
+        background: #f4f6f8;
+    }
+
+    .about__text {
+        margin-top: 1rem;
+    }
+
+    .about__grid,
+    .project__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+    }
+
+    .about__card, 
+    .project__card {
+        width: 100%;
+        margin-top: 3rem;
+
+    }
+
+    .footer {
+        padding: 6rem 0;
+    }
 }
